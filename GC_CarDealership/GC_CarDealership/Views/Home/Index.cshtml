@@ -1,0 +1,15 @@
+﻿@model GC_CarDealership.Models.CarSearchModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Cars</h1>
+    <p>Find a car</p>
+    <form asp-controller="Home" asp-action="Search">
+        <label asp-for="Id"></label>
+        <input asp-for="Id"/>
+        <input type="submit" value="Search" class="btn btn-primary"/>
+    </form>
+</div>
